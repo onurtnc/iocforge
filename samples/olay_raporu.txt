@@ -1,0 +1,44 @@
+OLAY RAPORU - INC-2026-0728-14
+Siniflandirma: Dahili / TLP:AMBER
+Analist: SOC Tier-2
+
+OZET
+----
+28 Temmuz 2026 saat 02:41'de FIN departmanindaki WS-FIN-014 makinesinde supheli
+aktivite tespit edildi. Kullanici, muhasebe@turkfatura-online[.]click adresinden
+gelen "RE: Odenmemis Fatura #TR-2026-88412" konulu e-postadaki eki actikti.
+
+ILK ERISIM
+----------
+Gonderen alan adi   : turkfatura-online[.]click
+Gonderen IP         : 185.244.25.171
+Reply-To            : odeme@securemail-tr[.]xyz
+Ek (makro)          : Fatura_TR-2026-88412.docm
+  MD5    : 44d88612fea8a8f36de82e1278abb02f
+  SHA256 : 275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f
+
+INDIRME
+-------
+Makro calistiktan sonra ikinci asama yuk indirildi:
+  hxxp://194.87.144[.]9/payload/update.exe
+  SHA256 : 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+  MD5    : d41d8cd98f00b204e9800998ecf8427e
+
+C2 ILETISIMI
+------------
+Yuk her 60 saniyede bir asagidaki adrese baglandi:
+  cdn-telemetry[.]top  ->  45.61.136[.]12:443
+  Ikincil C2           :  91.203.44[.]19:8443
+  DNS tuneli           :  *.tun.datatransfer[.]xyz
+
+DIGER GOSTERGELER
+-----------------
+Kaba kuvvet kaynagi : 45.155.205.233
+Metasploit handler  : 185.244.25.171:4444
+Fidye cuzdani       : bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh
+Somurulen zafiyet   : CVE-2026-21445
+Meshru trafik ornegi: github.com, 8.8.8.8, 140.82.121.4
+
+AKSIYON
+-------
+Tum gostergeler bloklandi, makine imajlandi.
