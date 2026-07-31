@@ -1,0 +1,3 @@
+# IOCForge sadece Python standart kutuphanesini kullanir (Python 3.8+).
+# requests, dnspython vb. GEREKMEZ - urllib ve sqlite3 yeterli.
+pytest>=7.0     # opsiyonel, testler icin
